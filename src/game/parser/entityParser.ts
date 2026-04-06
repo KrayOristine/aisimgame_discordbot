@@ -1,5 +1,5 @@
-import { mergeAndDeduplicateByName } from "@utils/arrayUtils";
-import { sanitizeEntityName } from "@utils/textProcessing";
+import { mergeAndDeduplicateByName } from "@utils/arrayUtils.ts";
+import { sanitizeEntityName } from "@utils/textProcessing.ts";
 
 /**
  * Xử lý logic thêm hoặc cập nhật một phe phái/thế lực.

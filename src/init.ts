@@ -1,3 +1,3 @@
-import { prepareHasher } from "@utils/hashing";
+import { prepareHasher } from "@/utils/hashing.ts";
 
 prepareHasher().then(() => console.log("HASHING MODULES INITIALIZED"));

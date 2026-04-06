@@ -1,7 +1,7 @@
-import { compress, decompress } from "#/utils/compress";
-import { getHasher, Bigint2Hex } from "#/utils/hashing";
-import { randomBigInt } from "#/utils/random";
-import { Bigint2Base64 } from "../../utils/hashing";
+import { compress, decompress } from "#/utils/compress.ts";
+import { getHasher, Bigint2Hex } from "#/utils/hashing.ts";
+import { randomBigInt } from "#/utils/random.ts";
+import { Bigint2Base64 } from "../../utils/hashing.ts";
 
 type CompressedSaveDataBase = {
   dataChecksum: string;

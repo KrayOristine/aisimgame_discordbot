@@ -6,10 +6,10 @@ import {
   ThinkingConfig,
   ThinkingLevel,
 } from "@google/genai";
-import { getSettings } from "@service/settingsService";
-import { DEFAULT_AI_PERFORMANCE_SETTINGS, AIModel } from "#/constants";
-import { processNarration } from "@utils/textProcessing";
-import { filterSafetySettings } from "@utils/filterSafetySettings";
+import { getSettings } from "@service/settingsService.ts";
+import { DEFAULT_AI_PERFORMANCE_SETTINGS, AIModel } from "#/constants.ts";
+import { processNarration } from "@utils/textProcessing.ts";
+import { filterSafetySettings } from "@utils/filterSafetySettings.ts";
 
 const DEBUG_MODE = true; // Bật/tắt chế độ debug chi tiết trong Console (F12)
 

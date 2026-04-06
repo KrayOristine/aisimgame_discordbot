@@ -7,10 +7,10 @@
  * Go give him a visit
  */
 
-export { Cursor } from "#/utils/idb/cursor";
+export { Cursor } from "#/utils/idb/cursor.ts";
 export { CursorWithValue } from "#/utils/idb/cursor-w-value";
-export { Index } from "#/utils/idb/idx";
+export { Index } from "#/utils/idb/idx.ts";
 export { ObjectStore } from "#/utils/idb/object-store";
-export { Transaction } from "#/utils/idb/transaction";
-export { Database } from "#/utils/idb/database";
-export { Factory } from "#/utils/idb/factory";
+export { Transaction } from "#/utils/idb/transaction.ts";
+export { Database } from "#/utils/idb/database.ts";
+export { Factory } from "#/utils/idb/factory.ts";

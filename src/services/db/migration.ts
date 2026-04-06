@@ -1,8 +1,8 @@
-import { getHasher, HashBigSeed } from "@utils/hashing";
-import { Bigint2Hex } from "@utils/hashing";
-import { processSaveSlot } from "#/services/db/processing";
-import { DBStoreName, DEP_DBStoreName } from "#/services/db/service";
-import type { Transaction } from "#/utils/idb";
+import { getHasher, HashBigSeed } from "@utils/hashing.ts";
+import { Bigint2Hex } from "@utils/hashing.ts";
+import { processSaveSlot } from "#/services/db/processing.ts";
+import { DBStoreName, DEP_DBStoreName } from "#/services/db/service.ts";
+import type { Transaction } from "#/utils/idb.ts";
 
 export function upgrade0to5(oldVer: number, dbInstance: IDBDatabase) {
   switch (oldVer) {

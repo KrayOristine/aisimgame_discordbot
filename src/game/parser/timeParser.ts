@@ -1,5 +1,5 @@
-import { advanceTime, getSeason, generateWeather, shouldWeatherUpdate } from "@utils/timeUtils";
-import { resolveGenreArchetype } from "@utils/genreUtils";
+import { advanceTime, getSeason, generateWeather, shouldWeatherUpdate } from "@utils/timeUtils.ts";
+import { resolveGenreArchetype } from "@utils/genreUtils.ts";
 
 /**
  * Chuyển đổi khoảng thời gian "mờ" ('short', 'medium', 'long') thành một số phút ngẫu nhiên trong một khoảng xác định.

@@ -1,8 +1,8 @@
-import { upgrade0to5, migrateDBStructurev7, addSaveCompression } from "#/services/db/migration";
-import { parseSaveSlot, processSaveSlot } from "#/services/db/processing";
-import type { CompressedSaveSlot } from "#/services/db/processing";
-import { Database } from "#/utils/idb";
-import type { Transaction } from "#/utils/idb";
+import { upgrade0to5, migrateDBStructurev7, addSaveCompression } from "#/services/db/migration.ts";
+import { parseSaveSlot, processSaveSlot } from "#/services/db/processing.ts";
+import type { CompressedSaveSlot } from "#/services/db/processing.ts";
+import { Database } from "#/utils/idb.ts";
+import type { Transaction } from "#/utils/idb.ts";
 import ld from "lodash";
 
 /**

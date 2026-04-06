@@ -1,4 +1,4 @@
-import { generateJson, setDebugContext } from "@service/geminiService";
+import { generateJson, setDebugContext } from "@service/geminiService.ts";
 import {
   getDynamicStateUpdatePrompt,
   getEncyclopediaUpdatePrompt,
@@ -6,8 +6,8 @@ import {
   getCategoryNormalizationPrompt,
   getEntityDeduplicationPrompt,
   analyticalCallConfig,
-} from "#/prompts/analysisPrompts";
-import { AIModel } from "#/constants";
+} from "#/prompts/analysisPrompts.ts";
+import { AIModel } from "#/constants.ts";
 
 export const updateDynamicStateFromNarration = async (
   gameState: GameState,

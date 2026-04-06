@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import { getSettings } from "@service/settingsService";
+import { getSettings } from "@service/settingsService.ts";
 
 type KeyValidationResult = "valid" | "invalid" | "rate_limited";
 

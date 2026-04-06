@@ -1,4 +1,4 @@
-import { generate, generateJson } from "@service/geminiService";
+import { generate, generateJson } from "@service/geminiService.ts";
 import {
   getGenerateCharacterBioPrompt,
   getGenerateCharacterSkillsPrompt,
@@ -8,7 +8,7 @@ import {
   getGenerateCharacterMotivationPrompt,
   getGenerateMilestonesPrompt,
   getGenerateSingleMilestonePrompt,
-} from "#/prompts/characterPrompts";
+} from "#/prompts/characterPrompts.ts";
 
 export const generateCharacterBio = (config: WorldConfig): Promise<string> => {
   const prompt = getGenerateCharacterBioPrompt(config);

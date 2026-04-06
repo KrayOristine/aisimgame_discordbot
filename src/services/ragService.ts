@@ -1,4 +1,4 @@
-import { generate, generateJson } from "@service/geminiService";
+import { generate, generateJson } from "@service/geminiService.ts";
 
 import {
   getRetrieveRelevantSummariesPrompt,
@@ -6,16 +6,16 @@ import {
   getDistillKnowledgePrompt,
   getContextualizePrompt,
   getSummarizeNpcDossierPrompt,
-} from "#/prompts/analysisPrompts";
-import { buildBackgroundKnowledgePrompt } from "#/prompts/worldCreationPrompts";
-import { isFandomDataset, extractCleanTextFromDataset } from "@utils/datasetUtils";
-import * as embeddingService from "./embeddingService";
-import * as fandomFileService from "@service/fandomFileService";
-import { cosineSimilarity } from "@utils/vectorUtils";
-import { buildNsfwPayload } from "@utils/promptBuilders";
-import * as dbService from "#/services/dbService";
-import { AIModel } from "#/constants";
-import { getSettings } from "@service/settingsService";
+} from "#/prompts/analysisPrompts.ts";
+import { buildBackgroundKnowledgePrompt } from "#/prompts/worldCreationPrompts.ts";
+import { isFandomDataset, extractCleanTextFromDataset } from "@utils/datasetUtils.ts";
+import * as embeddingService from "./embeddingService.ts";
+import * as fandomFileService from "@service/fandomFileService.ts";
+import { cosineSimilarity } from "@utils/vectorUtils.ts";
+import { buildNsfwPayload } from "@utils/promptBuilders.ts";
+import * as dbService from "#/services/dbService.ts";
+import { AIModel } from "#/constants.ts";
+import { getSettings } from "@service/settingsService.ts";
 
 const DEBUG_MODE = true;
 const DOSSIER_FRESH_LIMIT = 20; // Số lượt tương tác gần nhất được giữ nguyên văn

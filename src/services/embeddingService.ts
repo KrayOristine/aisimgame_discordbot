@@ -1,5 +1,5 @@
-import { generateEmbeddingsBatch } from "./geminiService";
-import * as dbService from "#/services/dbService";
+import { generateEmbeddingsBatch } from "./geminiService.ts";
+import * as dbService from "#/services/dbService.ts";
 
 const BATCH_SIZE = 100; // Tăng giới hạn batch theo API
 const DELAY_BETWEEN_BATCHES = 1000; // Giảm độ trễ vì ít request hơn

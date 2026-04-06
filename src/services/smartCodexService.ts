@@ -1,6 +1,6 @@
-import { generateJson } from "@service/geminiService";
-import { getSmartCodexPrompt } from "#/prompts/smartCodexPrompts";
-import { AIModel } from "#/constants";
+import { generateJson } from "@service/geminiService.ts";
+import { getSmartCodexPrompt } from "#/prompts/smartCodexPrompts.ts";
+import { AIModel } from "#/constants.ts";
 
 // Cấu hình riêng cho Worker AI: Ưu tiên tốc độ, chi phí thấp, nhưng output JSON chính xác.
 const workerAiConfig: Partial<AiPerformanceSettings> = {

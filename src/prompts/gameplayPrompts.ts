@@ -1,18 +1,18 @@
 import { Type } from "@google/genai";
-import { getGameMasterSystemInstruction, getResponseLengthDirective } from "./systemInstructions";
+import { getGameMasterSystemInstruction, getResponseLengthDirective } from "./systemInstructions.ts";
 import {
   buildNsfwPayload,
   buildPronounPayload,
   buildTimePayload,
   buildReputationPayload,
-} from "@utils/promptBuilders";
-import { getSettings } from "../services/settingsService";
-import { obfuscateText } from "../utils/textProcessing";
+} from "@utils/promptBuilders.ts";
+import { getSettings } from "../services/settingsService.ts";
+import { obfuscateText } from "../utils/textProcessing.ts";
 import {
   isFandomDataset,
   filterDatasetChunks,
   extractCleanTextFromDataset,
-} from "../utils/datasetUtils";
+} from "../utils/datasetUtils.ts";
 
 // Helper function to build NPC Memory Flag context
 const buildNpcMemoryFlagContext = (gameState: GameState, playerActionContent: string): string => {

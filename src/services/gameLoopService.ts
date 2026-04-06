@@ -1,20 +1,20 @@
-import { generate, generateJson } from "./geminiService";
+import { generate, generateJson } from "./geminiService.ts";
 import {
   getStartGamePrompt,
   getNextTurnPrompt,
   getGenerateReputationTiersPrompt,
-} from "#/prompts/gameplayPrompts";
-import * as ragService from "./ragService";
-import { getSettings } from "./settingsService";
-import * as dbService from "./dbService";
-import * as embeddingService from "./embeddingService";
+} from "#/prompts/gameplayPrompts.ts";
+import * as ragService from "./ragService.ts";
+import { getSettings } from "./settingsService.ts";
+import * as dbService from "./dbService.ts";
+import * as embeddingService from "./embeddingService.ts";
 import * as backgroundService from "./backgroundService"; // Import background service
-import { cosineSimilarity } from "@utils/vectorUtils";
-import { calculateKeywordScore, reciprocalRankFusion } from "@utils/searchUtils";
-import { parseResponse } from "#/game/parser";
-import { selectRelevantContext } from "@utils/ContextManager";
-import { resetRequestStats, printRequestStats, setDebugContext } from "./geminiService";
-import { AIModel } from "#/constants";
+import { cosineSimilarity } from "@utils/vectorUtils.ts";
+import { calculateKeywordScore, reciprocalRankFusion } from "@utils/searchUtils.ts";
+import { parseResponse } from "#/game/parser.ts";
+import { selectRelevantContext } from "@utils/ContextManager.ts";
+import { resetRequestStats, printRequestStats, setDebugContext } from "./geminiService.ts";
+import { AIModel } from "#/constants.ts";
 
 const DEBUG_MODE = true; // Bật/tắt chế độ debug chi tiết trong Console (F12)
 

@@ -1,6 +1,6 @@
-import { AIModel } from "#/constants";
+import { AIModel } from "#/constants.ts";
 
-import { generate, generateJson } from "@service/geminiService";
+import { generate, generateJson } from "@service/geminiService.ts";
 
 import {
   getGenerateGenrePrompt,
@@ -8,20 +8,20 @@ import {
   getGenerateWorldFromIdeaPrompt,
   getGenerateFanfictionWorldPrompt,
   getGenerateEntityInfoOnTheFlyPrompt,
-} from "#/prompts/worldCreationPrompts";
+} from "#/prompts/worldCreationPrompts.ts";
 import {
   getGenerateEntityNamePrompt,
   getGenerateEntityPersonalityPrompt,
   getGenerateEntityDescriptionPrompt,
-} from "#/prompts/entityPrompts";
+} from "#/prompts/entityPrompts.ts";
 import {
   getGenerateFandomSummaryPrompt,
   getExtractArcListFromSummaryPrompt,
   getGenerateFandomGenesisPrompt,
-} from "#/prompts/fandomPrompts";
-import { retrieveRelevantKnowledgeChunks } from "./ragService";
-import * as embeddingService from "./embeddingService";
-import { detectEntityTypeAndCategory } from "@utils/textProcessing";
+} from "#/prompts/fandomPrompts.ts";
+import { retrieveRelevantKnowledgeChunks } from "./ragService.ts";
+import * as embeddingService from "./embeddingService.ts";
+import { detectEntityTypeAndCategory } from "@utils/textProcessing.ts";
 
 // --- World Creation Screen AI Helpers ---
 

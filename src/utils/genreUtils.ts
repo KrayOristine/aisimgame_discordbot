@@ -1,4 +1,4 @@
-import { NARRATIVE_ARCHETYPES } from "#/constants/narrative_styles";
+import { NARRATIVE_ARCHETYPES } from "#/constants/narrative_styles.ts";
 
 export const resolveGenreArchetype = (genreString: string): string => {
   const lowerGenre = genreString.toLowerCase();

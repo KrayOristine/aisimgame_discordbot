@@ -1,6 +1,6 @@
 import { Type } from "@google/genai";
-import { getSettings } from "@service/settingsService";
-import { DEFAULT_AI_PERFORMANCE_SETTINGS } from "#/constants";
+import { getSettings } from "@service/settingsService.ts";
+import { DEFAULT_AI_PERFORMANCE_SETTINGS } from "#/constants.ts";
 
 export const getGenerateFandomSummaryPrompt = (
   workName: string,

@@ -1,4 +1,4 @@
-import { sanitizeEntityName } from "@utils/textProcessing";
+import { sanitizeEntityName } from "@utils/textProcessing.ts";
 
 /**
  * Xử lý logic thêm hoặc cập nhật vật phẩm trong túi đồ.

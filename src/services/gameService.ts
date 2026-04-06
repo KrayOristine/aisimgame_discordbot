@@ -1,8 +1,8 @@
-import * as dbService from "./dbService";
-import * as embeddingService from "./embeddingService";
-import * as ragService from "./ragService";
-import { getSettings } from "./settingsService";
-import { setDebugContext, resetRequestStats, printRequestStats } from "./geminiService";
+import * as dbService from "./dbService.ts";
+import * as embeddingService from "./embeddingService.ts";
+import * as ragService from "./ragService.ts";
+import { getSettings } from "./settingsService.ts";
+import { setDebugContext, resetRequestStats, printRequestStats } from "./geminiService.ts";
 
 const LEGACY_SAVES_STORAGE_KEY = "ai_rpg_all_saves";
 const MAX_MANUAL_SAVES = 5;

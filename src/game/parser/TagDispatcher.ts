@@ -1,25 +1,25 @@
-import { processItemAdd, processItemRemove } from "./itemParser";
-import { processStatChange } from "./statsParser";
-import { processTimePass } from "./timeParser";
-import { processCompanionNew, processCompanionRemove } from "./companionParser";
-import { processFactionUpdate, processEntityDiscovered } from "./entityParser";
+import { processItemAdd, processItemRemove } from "./itemParser.ts";
+import { processStatChange } from "./statsParser.ts";
+import { processTimePass } from "./timeParser.ts";
+import { processCompanionNew, processCompanionRemove } from "./companionParser.ts";
+import { processFactionUpdate, processEntityDiscovered } from "./entityParser.ts";
 import {
   processPlayerStatsInit,
   processWorldTimeSet,
   processReputationTiersSet,
-} from "./intializationParser";
-import { processMemoryAdd } from "./memoryParser";
-import { processMilestoneUpdate } from "./milestoneParser";
+} from "./intializationParser.ts";
+import { processMemoryAdd } from "./memoryParser.ts";
+import { processMilestoneUpdate } from "./milestoneParser.ts";
 import {
   processNpcNewOrUpdate,
   processNpcThoughtsUpdate,
   processMemoryFlag,
   processNpcEmotion,
-} from "./npcParser";
-import { processQuestUpdate, processQuestLog } from "./questParser";
-import { processReputationChange } from "./reputationParser";
-import { processSkillLearned } from "./skillParser";
-import { processStatusAcquired, processStatusRemoved } from "./statusParser";
+} from "./npcParser.ts";
+import { processQuestUpdate, processQuestLog } from "./questParser.ts";
+import { processReputationChange } from "./reputationParser.ts";
+import { processSkillLearned } from "./skillParser.ts";
+import { processStatusAcquired, processStatusRemoved } from "./statusParser.ts";
 
 /**
  * Điều phối viên chính, nhận danh sách thẻ lệnh và áp dụng chúng tuần tự vào trạng thái game.

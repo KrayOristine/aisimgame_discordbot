@@ -1,5 +1,5 @@
-import { ATMOSPHERE_CONFIG } from "#/constants/atmosphere";
-import { NARRATIVE_ARCHETYPES } from "#/constants/narrative_styles";
+import { ATMOSPHERE_CONFIG } from "#/constants/atmosphere.ts";
+import { NARRATIVE_ARCHETYPES } from "#/constants/narrative_styles.ts";
 
 export const advanceTime = (currentTime: WorldTime, timePassed: TimePassed | {}): WorldTime => {
   if (!timePassed || Object.keys(timePassed).length === 0) return currentTime;

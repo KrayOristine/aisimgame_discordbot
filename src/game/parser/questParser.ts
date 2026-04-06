@@ -1,5 +1,5 @@
-import { mergeAndDeduplicateByName } from "@utils/arrayUtils";
-import { sanitizeEntityName } from "@utils/textProcessing";
+import { mergeAndDeduplicateByName } from "@utils/arrayUtils.ts";
+import { sanitizeEntityName } from "@utils/textProcessing.ts";
 
 // Hàm helper để tạo chuỗi thời gian đẹp từ WorldTime
 const formatGameTime = (time: any): string => {

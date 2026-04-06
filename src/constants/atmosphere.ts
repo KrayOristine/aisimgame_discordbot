@@ -1,4 +1,4 @@
-import { NARRATIVE_ARCHETYPES } from "./narrative_styles";
+import { NARRATIVE_ARCHETYPES } from "./narrative_styles.ts";
 
 // Định nghĩa các kiểu dữ liệu
 type Season = string;

@@ -1,4 +1,4 @@
-import { GENRE_TAGGING_SYSTEMS } from "./genreTagging";
+import { GENRE_TAGGING_SYSTEMS } from "./genreTagging.ts";
 
 export const getResponseLengthDirective = (aiResponseLength?: string): string => {
   switch (aiResponseLength) {

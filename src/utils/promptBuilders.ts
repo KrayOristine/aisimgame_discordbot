@@ -2,11 +2,11 @@ import {
   NARRATIVE_STYLES,
   NARRATIVE_ARCHETYPES,
   DEOBFUSCATION_PROMPT,
-} from "#/constants/narrative_styles";
-import { PRONOUN_RULES } from "#/constants/pronoun_rules";
-import { REPUTATION_RULES_PROMPT } from "#/constants/reputation_rules";
-import { TIME_RULES } from "#/constants/time_rules";
-import { resolveGenreArchetype } from "@utils/genreUtils";
+} from "#/constants/narrative_styles.ts";
+import { PRONOUN_RULES } from "#/constants/pronoun_rules.ts";
+import { REPUTATION_RULES_PROMPT } from "#/constants/reputation_rules.ts";
+import { TIME_RULES } from "#/constants/time_rules.ts";
+import { resolveGenreArchetype } from "@utils/genreUtils.ts";
 
 export const buildNsfwPayload = (
   config: WorldConfig,

@@ -1,6 +1,5 @@
 minimumReleaseAge: 2880
 
 onlyBuiltDependencies:
-  - core-js
+  - '@mongodb-js/zstd'
   - esbuild
-  - protobufjs

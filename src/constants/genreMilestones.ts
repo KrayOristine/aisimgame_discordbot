@@ -1,4 +1,4 @@
-import { CharacterMilestone } from "#/types/character";
+import { CharacterMilestone } from "#/types/character.ts";
 
 // --- BỘ CỘT MỐC CHI TIẾT CHO TỪNG THỂ LOẠI ---
 

@@ -2,7 +2,7 @@ import {
   DEFAULT_SAFETY_SETTINGS,
   DEFAULT_RAG_SETTINGS,
   DEFAULT_AI_PERFORMANCE_SETTINGS,
-} from "#/constants";
+} from "#/constants.ts";
 
 const SETTINGS_STORAGE_KEY = "ai_rpg_settings";
 

@@ -1,7 +1,7 @@
-import { generateJson, setDebugContext, printRequestStats } from "./geminiService";
-import { getPiggybackAnalysisPrompt } from "#/prompts/analysisPrompts";
-import * as dbService from "./dbService";
-import { AIModel } from "#/constants";
+import { generateJson, setDebugContext, printRequestStats } from "./geminiService.ts";
+import { getPiggybackAnalysisPrompt } from "#/prompts/analysisPrompts.ts";
+import * as dbService from "./dbService.ts";
+import { AIModel } from "#/constants.ts";
 
 // Cấu hình Flash cho tác vụ nền - Ưu tiên tốc độ và chi phí thấp
 const backgroundConfig = {

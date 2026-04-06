@@ -5,13 +5,13 @@ import {
   DIFFICULTY_OPTIONS,
   ENTITY_TYPE_OPTIONS,
   CORE_ENTITY_TYPES,
-} from "#/constants";
+} from "#/constants.ts";
 import {
   isFandomDataset,
   extractCleanTextFromDataset,
   filterDatasetChunks,
-} from "../utils/datasetUtils";
-import { GENRES } from "../constants/genres";
+} from "../utils/datasetUtils.ts";
+import { GENRES } from "../constants/genres.ts";
 
 const getCleanContent = (content: string, filterKeyword?: string): string => {
   if (isFandomDataset(content)) {
