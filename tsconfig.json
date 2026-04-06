@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "module": "ESNext",
+    "rootDir": ".",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "types": [],
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noImplicitOverride": true,
+    "strict": true,
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "#/*": ["./src/*"],
+      "@component/*": ["./src/components/*"],
+      "@service/*": ["./src/services/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@game/*": ["./src/game/*"],
+      "@prompt/*": ["./src/prompts/*"],
+      "@const/*": ["./src/constants/*"]
+    },
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"]
+}
